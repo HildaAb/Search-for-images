@@ -4,9 +4,62 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Search images</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <header>
+      <h1>Image search app</h1>
+    </header>
+    <main>
+      <form action>
+        <input
+          type="texr"
+          class="search-input"
+          id="search-input"
+          placeholder="Search for images"
+        />
+        <button class="search-btn" id="search-btn">Search</button>
+      </form>
+    </main>
+
+    <section>
+      <div class="search-results">
+        <div class="search-result">
+          <img src="dog.jpg" alt="happy running dog" class="image1" />
+          <a
+            href="https://pixabay.com/photos/dog-wolf-animal-canine-predator-9190504"
+            terget="_blank"
+            >Happy dog at the sea</a
+          >
+        </div>
+
+        <div class="search-result">
+          <img src="brothers.jpg" alt="happy running dog" class="image1" />
+          <a
+            href="https://pixabay.com/photos/dog-wolf-animal-canine-predator-9190504"
+            terget="_blank"
+            >Brothers</a
+          >
+        </div>
+
+        <div class="search-result">
+          <img src="cat.jpg" alt="happy running dog" class="image1" />
+          <a
+            href="https://pixabay.com/photos/dog-wolf-animal-canine-predator-9190504"
+            terget="_blank"
+            >Sleeping cat</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <button class="show-btn" id="show-btn">Show more</button>
     <script src="app.js"></script>
   </body>
 </html>
